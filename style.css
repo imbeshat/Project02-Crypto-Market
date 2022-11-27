@@ -1,2 +1,105 @@
 /* You can not modify anything in the HTML */
 /* You can only modify the CSS file */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	max-width: 1440px;
+	background: url("./assets/bg.png");
+}
+
+/* --------------- CSS for nav bar -------------- */
+.container {
+	background-color: #000000;
+	width: 100%;
+	height: 5.5rem;
+}
+
+section {
+	width: 80%;
+	margin: auto;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 95px;
+}
+
+nav div img {
+	height: 2.5rem;
+}
+
+.grow-list {
+	flex-grow: 1;
+}
+
+ul {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 65px;
+	font-size: 15px;
+}
+
+li {
+	list-style: none;
+	margin-right: 42px;
+	color: #cad5e2;
+}
+
+.button-small {
+	padding: 10px;
+	width: 130px;
+	height: 35px;
+	background-color: #b828af;
+	color: #ffffff;
+	border: none;
+	border-radius: 5px;
+	font-weight: 500;
+	letter-spacing: 0.75px;
+}
+
+/* ------------------------------------------- */
+
+/* -------------- CSS for Hero Section ------------ */
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 10% 30%;
+	width: 50%;
+}
+
+h1 {
+	font-size: 50px;
+	color: #ffffff;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+p {
+	font-size: 20px;
+	color: #ffffff;
+}
+
+.button-large {
+	margin-top: 40px;
+	font-size: 20px;
+	padding: 10px;
+	width: 260px;
+	height: 55px;
+	background-color: #bb19b0;
+	color: #ffffff;
+	border: none;
+	border-radius: 10px;
+	font-weight: 600;
+	letter-spacing: 0.75px;
+}
