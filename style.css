@@ -5,34 +5,33 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 
 body {
 	font-family: "Poppins", sans-serif;
-	max-width: 1440px;
-	background: url("./assets/bg.png");
 }
 
 /* --------------- CSS for nav bar -------------- */
-.container {
+
+[aria-label="navbar"] {
 	background-color: #000000;
 	width: 100%;
 	height: 5.5rem;
-}
-
-section {
-	width: 80%;
-	margin: auto;
+	display: flex;
+	align-items: center;
 }
 
 nav {
+	width: 100%;
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
+	align-items: center;
 	height: 95px;
 }
 
 nav div img {
+	margin-left: 100px;
 	height: 2.5rem;
 }
 
@@ -40,21 +39,35 @@ nav div img {
 	flex-grow: 1;
 }
 
+.line {
+	height: 3rem;
+	width: 0.1rem;
+	background-color: #fff;
+	margin: 0 5rem;
+}
+
 ul {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	padding-left: 65px;
 	font-size: 15px;
 }
 
 li {
 	list-style: none;
-	margin-right: 42px;
+	margin-right: 60px;
 	color: #cad5e2;
 }
 
+li:first-child::after {
+	content: "  \0002C7";
+	position: relative;
+	top: 4px;
+	width: 5px;
+}
+
 .button-small {
+	margin-right: 100px;
 	padding: 10px;
 	width: 130px;
 	height: 35px;
@@ -62,32 +75,42 @@ li {
 	color: #ffffff;
 	border: none;
 	border-radius: 5px;
-	font-weight: 500;
+	font-weight: 600;
 	letter-spacing: 0.75px;
 }
 
 /* ------------------------------------------- */
 
 /* -------------- CSS for Hero Section ------------ */
+[aria-label="hero"] {
+	background-image: url("./assets/bg.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 90vh;
+}
+
 .hero {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin: 10% 30%;
+	text-align: center;
+	margin: 10%;
 	width: 50%;
+	margin-left: 25%;
 }
 
 h1 {
-	font-size: 50px;
+	font-size: 60px;
 	color: #ffffff;
 	margin-left: 50px;
 	margin-right: 50px;
+	font-weight: 600;
+	line-height: 1.2;
 }
 
 p {
 	font-size: 20px;
 	color: #ffffff;
+	font-weight: 500;
+	margin-top: 5px;
 }
 
 .button-large {
