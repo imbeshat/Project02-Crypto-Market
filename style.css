@@ -16,14 +16,14 @@ body {
 
 [aria-label="navbar"] {
 	background-color: #000000;
-	width: 100%;
+	width: 100vw;
 	height: 5.5rem;
 	display: flex;
 	align-items: center;
 }
 
 nav {
-	width: 100%;
+	width: 100vw;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -92,9 +92,9 @@ li:first-child::after {
 
 .hero {
 	text-align: center;
-	margin: 10%;
-	width: 50%;
-	margin-left: 25%;
+	margin-top: 155px;
+	width: 50vw;
+	margin-left: 385px;
 }
 
 h1 {
