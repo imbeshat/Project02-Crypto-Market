@@ -93,25 +93,22 @@ li:first-child::after {
 
 .hero {
 	text-align: center;
-	margin-top: 155px;
 	width: 50vw;
-	margin-left: 385px;
+	margin: 175px auto 0 auto;
 }
 
 h1 {
-	font-size: 60px;
+	font-size: 78px;
 	color: #ffffff;
-	margin-left: 50px;
-	margin-right: 50px;
 	font-weight: 600;
 	line-height: 1.2;
 }
 
 p {
-	font-size: 20px;
+	font-size: 24px;
 	color: #ffffff;
 	font-weight: 500;
-	margin-top: 5px;
+	margin-top: 10px;
 }
 
 .button-large {
